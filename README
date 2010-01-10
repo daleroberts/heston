@@ -1,0 +1,12 @@
+Implementations of the Heston stochastic volatility model.
+
+ - Semi-closed form solution for a European call option
+ - Monte Carlo solution (Absorbing at zero + Euler method)
+ - Monte Carlo solution (Reflecting at zero + Euler method)
+ - Monte Carlo solution (Reflecting at zero + Milstein method)
+ - Monte Carlo solution (Alfonsi correction)
+
+ - Plot implied volality surface
+
+
+ Dale Roberts <dale.o.roberts@gmail.com>
