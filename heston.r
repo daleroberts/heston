@@ -8,6 +8,24 @@
 ## - Plot implied volality surface
 ##
 ## Dale Roberts <dale.roberts@anu.edu.au>
+##
+## PARAMETERS
+##
+## lambda: mean-reversion speed
+## vbar: long-term average volatility
+## eta: volatility of vol process
+## rho: correlation between stock and vol
+## v0: initial volatility
+## r: risk-free interest rate
+## tau: time to maturity
+## S0: initial share price
+## K: strike price
+##
+## MODEL
+## 
+## dS_t = S_t r dt + S_t sqrt(V_t)dW_t^S
+## dV_t = \lambda (\vbar - V_t)dt - eta sqrt(V_t)dW_t^V
+## with d<W^S,W^V>_t = \rho dt
 
 ONEYEAR <- 250
 
